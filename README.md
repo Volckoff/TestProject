@@ -39,3 +39,17 @@ ____
 
 
 *git status* (от англ.  «статус», «состояние») — покажи текущее состояние репозитория. <br>
+
+
+# Git Status
+
+
+```mermaid
+flowchart LR
+A[untracked] --git add--> B[staged + tracked]
+C[modified] --git add--> B
+B --Изменения--> C
+B --git commit--> D[tracked]
+D -- Изменения--> C
+```
+
